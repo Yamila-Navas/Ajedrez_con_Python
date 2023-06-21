@@ -8,21 +8,20 @@ from tkinter import PhotoImage
 
 
 #fichas blancas:
-reyN = PhotoImage(file="img/torre-negra.png")
-reinaN= PhotoImage(file="img/torre-negra.png")
-#torreN= "♜"
-torreN = PhotoImage(file="img/torre-negra.png")
-alfilN=PhotoImage(file="img/torre-negra.png")
-caballoN=PhotoImage(file="img/torre-negra.png")
-peonN=PhotoImage(file="img/torre-negra.png")
+reyN = "♚"
+reinaN= "♛"
+torreN= "♜"
+alfilN= "♝"
+caballoN= "♞"
+peonN= "♟"
 
 #fichas negras:
-reyB = PhotoImage(file="img/torre-negra.png")
-reinaB= PhotoImage(file="img/torre-negra.png")
-torreB= PhotoImage(file="img/torre-negra.png")
-alfilB=PhotoImage(file="img/torre-negra.png")
-caballoB=PhotoImage(file="img/torre-negra.png")
-peonB=PhotoImage(file="img/torre-negra.png")
+reyB = "♔"
+reinaB= "♕"
+torreB= "♖"
+alfilB= "♗"
+caballoB= "♘"
+peonB= "♙"
 
 #tablero 8*8:
 tablero = [[torreN,caballoN,alfilN,reinaN,reyN,alfilN,caballoN,torreN],[peonN,peonN,peonN,peonN,peonN,peonN,peonN,peonN],["","","","","","","",""],["","","","","","","",""],["","","","","","","",""],["","","","","","","",""],[peonB,peonB,peonB,peonB,peonB,peonB,peonB,peonB],[torreB,caballoB,alfilB,reinaB,reyB,alfilB,caballoB,torreB]]
@@ -48,7 +47,7 @@ def mostras_tablero(tablero):
 def Posicion_inicial(tablero):
     for fila in range(8):
       for colum in range(8):
-        botones_tablero[fila][colum].config(image=tablero[fila][colum])
+        botones_tablero[fila][colum].config(text=tablero[fila][colum])
 
 
 
